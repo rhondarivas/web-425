@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "profile-app": {
+    "composer-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/profile-app",
+            "outputPath": "dist/composer-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "profile-app:build"
+            "browserTarget": "composer-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "profile-app:build:production"
+              "browserTarget": "composer-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "profile-app:build"
+            "browserTarget": "composer-app:build"
           }
         },
         "test": {
@@ -92,13 +92,9 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            "scripts": []
           }
         },
         "lint": {
@@ -118,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "profile-app:serve"
+            "devServerTarget": "composer-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "profile-app:serve:production"
+              "devServerTarget": "composer-app:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "profile-app"
+  "defaultProject": "composer-app"
 }
