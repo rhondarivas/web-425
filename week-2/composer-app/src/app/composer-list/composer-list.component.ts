@@ -1,6 +1,6 @@
 /**
  * Title: composer-list.component.ts
- * Author: Professor Krasso
+ * Author: Rhonda Rivas
  * Date: September 13 2020
  * Description: Composer list component; displays a list of composers
  */
